@@ -23,14 +23,18 @@ func BreakpointContinue(c *gin.Context) {
 	fileMd5 := c.Request.FormValue("fileMd5")
 	fileName := c.Request.FormValue("fileName")
 	chunkMd5 := c.Request.FormValue("chunkMd5")
+	//srconv.Atoi:字符串转ing
 	chunkNumber, _ := strconv.Atoi(c.Request.FormValue("chunkNumber"))
 	chunkTotal, _ := strconv.Atoi(c.Request.FormValue("chunkTotal"))
 	_, FileHeader, err := c.Request.FormFile("file")
 	if err != nil {
+		// 日志
 		global.GVA_LOG.Error("接收文件失败!", zap.Any("err", err))
+		//返回给客户端的response中写入信息
 		response.FailWithMessage("接收文件失败", c)
 		return
 	}
+	//读取文件已校验MD5值
 	f, err := FileHeader.Open()
 	if err != nil {
 		global.GVA_LOG.Error("文件读取失败!", zap.Any("err", err))
