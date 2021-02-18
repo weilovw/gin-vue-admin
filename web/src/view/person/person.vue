@@ -19,10 +19,10 @@
                    <i class="el-icon-user"></i>{{userInfo.nickName}}
                 </li>
                 <li>
-                  <i class="el-icon-data-analysis"></i>北京反转极光科技有限公司-技术部-前端事业群
+                  <i class="el-icon-data-analysis"></i>上海联通-云网运营中心-数据网室
                 </li>
                 <li>
-                  <i class="el-icon-video-camera-solid"></i>中国·北京市·朝阳区
+                  <i class="el-icon-video-camera-solid"></i>中国·上海市·杨浦区
                 </li>
                 <li>
                   <i class="el-icon-medal-1"></i>goLang/JavaScript/Vue/Gorm
@@ -40,14 +40,14 @@
                 <li>
                   <p class="title">密保手机</p>
                   <p class="desc">
-                    已绑定手机:1245678910
+                    未设置
                     <a href="#">立即修改</a>
                   </p>
                 </li>
                 <li>
                   <p class="title">密保邮箱</p>
                   <p class="desc">
-                    已绑定邮箱：gin-vue-admin@google.com.cn
+                    未设置
                     <a href="#">立即修改</a>
                   </p>
                 </li>

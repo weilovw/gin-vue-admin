@@ -8,7 +8,7 @@ COPY . .
 RUN go env && go build -o server .
 
 FROM alpine:latest
-LABEL MAINTAINER="SliverHorn@sliver_horn@qq.com"
+LABEL MAINTAINER="zhongw37@chinaunicom.cn"
 
 WORKDIR /go/src/gin-vue-admin
 COPY --from=0 /go/src/gin-vue-admin/server ./

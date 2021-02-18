@@ -154,6 +154,11 @@ func GetDemo(){
 
 	})
 }
+//1.VUE的界面,组件的形式，路由跳转
+//2.server后端的API的编写
+//3.后端API请求前端的界面然后获取主界面，在主界面里面实现面包屑的路由跳转，展示最近本的信息
+//需求分析：
+//前端请求上传Excel，后端获取之后
 //func tcpDemo() {
 //	listener,err:=net.Listen("tcp","127.0.0.1:12345")
 //	if err!=nil{
